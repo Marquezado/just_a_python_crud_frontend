@@ -23,9 +23,9 @@ export default function Cards() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-wrap gap-4">
       {notes.map((note) => (
-        <div key={note.id} className="max-w-sm rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+        <div key={note.id} className="max-w-sm rounded-xl border border-gray-200 bg-white p-5 shadow-sm w-2xs h-2xs">
           <div className="flex items-center justify-between gap-3">
             <h3 className="text-lg font-semibold text-gray-900">{note.title}</h3>
                     <span className={`rounded-full bg-green-100 px-3 py-1 text-xs font-medium 
